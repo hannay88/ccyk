@@ -1,0 +1,79 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#4facfe,#ff4d8d);
+  min-height:100vh;
+}
+
+.app{
+  max-width:480px;
+  margin:auto;
+  background:#fff;
+  min-height:100vh;
+}
+
+.header{
+  text-align:center;
+  color:#fff;
+  padding:30px 20px;
+  background:linear-gradient(135deg,#2196f3,#ff2d75);
+}
+
+.logo{
+  font-size:60px;
+  animation:heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.2);}
+  100%{transform:scale(1);}
+}
+
+.ticker{
+  overflow:hidden;
+  white-space:nowrap;
+  margin-top:15px;
+}
+
+.ticker span{
+  display:inline-block;
+  padding-left:100%;
+  animation:scrollText 15s linear infinite;
+}
+
+@keyframes scrollText{
+  from{transform:translateX(0);}
+  to{transform:translateX(-100%);}
+}
+
+#content{
+  padding:20px;
+  min-height:500px;
+}
+
+.nav{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  max-width:480px;
+  margin:auto;
+  display:flex;
+  justify-content:space-around;
+  background:#fff;
+  border-top:1px solid #ddd;
+}
+
+.nav button{
+  flex:1;
+  padding:12px;
+  border:none;
+  background:none;
+  font-size:16px;
+}
